@@ -197,49 +197,28 @@ else if(age >= 18){
 
 
 
-                              // Q9. Shop discount
+                              // Q9. Shoping  discaunt calculater.
 
-/* let amount = Number(prompt("enter the total amount:"));
+let amt = Number(prompt("Enter the amount")); 
+let dis = 0;
+if(isNaN(amt) || amt < 0){
+ console.log("you have enter wrong input");
+} else{
+    if(amt <= 5000){
+        dis = 0;
+    }
+    else if (amt < 7000){
+        dis = 5;
+    }
+    else if (amt < 9000){
+        dis = 10;
+    }else if (amt > 9000){
+        dis = 20;
+    }
+    console.log(amt - Math.floor(dis * amt / 100));
+}                   
 
-if(amount <= 5000 && amount >= 0){
-  let disCount = amount * 0 / 100;
-  let discountPrice = Math.round(amount - disCount);
-  console.log(" discounted price is: " + discountPrice);
 
-} else if( amount >= 5001 && amount <= 7000){
-  let disCount = amount * 5 / 100;
-  let discountPrice = Math.round(amount - disCount);
-  console.log("discounted price is : " + discountPrice);
-}else if ( amount >= 7001 && amount <= 9000){
-  let disCount = amount * 10 / 100;
-  let discountPrice = Math.round(amount - disCount);
-  console.log("discounted price is : " + discountPrice)
-}else if ( amount >= 9000){
-  let disCount = amount * 20 / 100;
-  let discountPrice = Math.round(amount - disCount);
-  console.log("discounted price is : " + discountPrice)
-}else if (isNaN(amount)){
-  console.log("you have entered wrong input");
-}else{
-  console.log("input some amount");
-}  */
-
-  // shortcurt:
-
-  /* let amount = Number(prompt("enter the total amount:"));
-  let dis;
-  if(amount >= 0 && amount <= 5000){
-    dis = 0;
-  } else if(amount >= 5001 && amount <= 7000){
-    dis = 5;
-  } else if(amount >= 7001 && amount <= 9000){
-    dis = 10
-  }else if (amount >= 9002){
-    dis = 20;
-  }else if (isNaN(amount)){
-    console.log("wrong Input:")
-  }
-  console.log(amount - Math.round((dis * amount )/ 100)); */
 
 
 
@@ -250,14 +229,7 @@ if(amount <= 5000 && amount >= 0){
                                        // Reversion Pratice.
 
 
-let a = 11;
-let b = 20;
 
-[a, b] = [b , a] 
-
-console.log(b);
-console.log(a);
- 
  
 
 
