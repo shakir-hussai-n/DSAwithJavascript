@@ -1,14 +1,10 @@
-
-
 // let age = prompt ("input any keywords: ")
 //     age = Number(age)
 // console.log(typeof(age));
 
+// Swap variable by 3 method.
 
-
-   // Swap variable by 3 method.
-
-   /* let a = 10;
+/* let a = 10;
    let b = 20;
    let c ;
    
@@ -21,11 +17,7 @@
    console.log(a);
    console.log(b);  */
 
-
-
-              // Swap variable by using arithmatic operator method or swap  variable without extra variable.
-
-
+// Swap variable by using arithmatic operator method or swap  variable without extra variable.
 
 /*  let a = 10;
  let b = 20;
@@ -38,9 +30,7 @@
  console.log(b); // 10
  console.log(a , b)  */
 
- 
-
-                     // Array destructuring swap.
+// Array destructuring swap.
 
 /*  let a = 10;
  let b = 20;
@@ -49,32 +39,24 @@
 
  console.log(a ,b) */
 
-
-
-
-                               // Using of increment and decrement.
+// Using of increment and decrement.
 /* let i = 11;
  i = i++ + ++i;
  console.log(i);  */
-
-
 
 /* let a = 11, b = 22;
  let c = a + b + a++ + b++ + ++a + ++b;
  console.log(a , b , c);   // output: 13 24 103;  */
 
-
 /* let a = true;
  ++a;
  console.log(a); */
-
 
 /* let i = 11;
 let j = ++i;
 console.log(j); */
 
-
-                  // Math functions 
+// Math functions
 
 /* // Math.round()
 console.log(Math.round(10.6)); output : 11;
@@ -125,10 +107,7 @@ console.log(Math.trunc(Math.random()*500 + 100)); output: 444; // this will help
 let a = 89.23432
 console.log(a.toFixed(2)); output: 89.23 // it will helps to keep 2 or more no after float point.  */
 
-
-
-
-                                  // Math Problem
+// Math Problem
 
 /* function calculateRectangle ( l, b){
 
@@ -142,14 +121,12 @@ let result = calculateRectangle( 5, 3);
 
 console.log(result);  */
 
-
-                  // otp generate
+// otp generate
 
 /* const otp = Math.trunc(Math.random()*1000 + 100);
 console.log(otp); */
 
-
-                        // area of triangle by herons formula
+// area of triangle by herons formula
 
 /* let a = 5;
  let b = 4;
@@ -158,21 +135,16 @@ console.log(otp); */
  let s = (a+b+c)/2;
  console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c))); */
 
-
-
-                                                //circumference of circle
+//circumference of circle
 
 /* let r = 12;
 let c = Number((2*Math.PI*r).toFixed(2))
 
 console.log(typeof(c)); */
 
+// Video 2 : conditional Statement
 
-
-
-                                       // Video 2 : conditional Statement
-
-                                       /*  Q8. Valid Voter
+/*  Q8. Valid Voter
                                          Q9. Shop discount
                                          Q10. Bijili bill
                                          Q11. INR Denomination
@@ -181,9 +153,8 @@ console.log(typeof(c)); */
                                          switch and One case handling multiple value
                                          switch case cam't handle float value because its precision issues.  */
 
-
 // Q.8 Valid Voter  (Note : NaN === NaN : if false; isNaN(NaN): true; isNaN() is a function that helps to )
-    
+
 /* let age = Number(prompt("What is you age?"));
 
 if (isNaN(age)){
@@ -195,11 +166,9 @@ else if(age >= 18){
   console.log("you can note vote");
 } */
 
+// Q9. Shoping  discaunt calculater.
 
-
-                              // Q9. Shoping  discaunt calculater.
-
-let amt = Number(prompt("Enter the amount")); 
+/* let amt = Number(prompt("Enter the amount")); 
 let dis = 0;
 if(isNaN(amt) || amt < 0){
  console.log("you have enter wrong input");
@@ -217,20 +186,31 @@ if(isNaN(amt) || amt < 0){
     }
     console.log(amt - Math.floor(dis * amt / 100));
 }                   
+ */
 
+// Q10. Electric bill calculater.
 
+let unit = Number(prompt("enter the Unit"));
+let amt = 0;
+if (isNaN(unit) || unit < 0) {
+  console.log("You have entered wrong input:");
+} else {
+  if (unit > 400) {
+    amt = (unit - 400) * 13;
+    unit = 400;
+  }
+  if (unit > 200 && unit <= 400) {
+    amt += (unit - 200) * 8;
+    unit = 200;
+  }
+  if (unit > 100 && unit <= 200) {
+    amt += (unit - 100) * 6;
+    unit = 100;
+  }
 
+  amt += unit * 4;
 
+  console.log("Total amount to Pay: " + amt);
+}
 
-                                       // Q10. Bijili bill.
-
-
-
-                                       // Reversion Pratice.
-
-
-
- 
-
-
-
+// Reversion Pratice.
