@@ -190,7 +190,7 @@ if(isNaN(amt) || amt < 0){
 
 // Q10. Electric bill calculater.
 
-let unit = Number(prompt("enter the Unit"));
+/*let unit = Number(prompt("enter the Unit"));
 let amt = 0;
 if (isNaN(unit) || unit < 0) {
   console.log("You have entered wrong input:");
@@ -211,6 +211,53 @@ if (isNaN(unit) || unit < 0) {
   amt += unit * 4;
 
   console.log("Total amount to Pay: " + amt);
+} */
+
+
+                                // INR Denomination
+
+
+let amt = Number(prompt("enter the amount"));
+
+if(isNaN(amt) || amt < 0){
+  console.log("You have enter");
 }
+else{
+  if(amt >= 500){
+    console.log(" 500 note:" + Math.floor(amt/500));
+    amt = amt % 500;
+  }
+  if(amt >= 200){
+    console.log( " 200 note:" + Math.floor(amt/200));
+    amt = amt % 200;
+  }
+  if(amt >= 100){
+    console.log( " 100 note:" + Math.floor(amt/100));
+    amt = amt % 100;
+  }
+  if(amt >= 50){
+    console.log( " 50 note:" + Math.floor(amt/50));
+    amt = amt % 50;
+  }
+  if(amt >= 20){
+    console.log( " 20 note:" + Math.floor(amt/20));
+    amt = amt % 20;
+  }
+  if(amt >= 10){
+    console.log( " 10 note or coin:" + Math.floor(amt/10));
+    amt = amt % 10;
+  }
+  if(amt >= 5){
+    console.log( " 5 note or coin:" + Math.floor(amt/5));
+    amt = amt % 5;
+  }
+  if(amt >= 2){
+    console.log( " 2 coin :" + Math.floor(amt/2));
+    amt = amt % 2;
+  }
+  if(amt === 1){
+    console.log( " 1 coin :" + amt)
+  }
+}                            
 
 // Reversion Pratice.
