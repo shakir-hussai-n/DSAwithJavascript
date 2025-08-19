@@ -217,7 +217,7 @@ if (isNaN(unit) || unit < 0) {
                                 // INR Denomination
 
 
-let amt = Number(prompt("enter the amount"));
+/*let amt = Number(prompt("enter the amount"));
 
 if(isNaN(amt) || amt < 0){
   console.log("You have enter");
@@ -258,6 +258,35 @@ else{
   if(amt === 1){
     console.log( " 1 coin :" + amt)
   }
-}                            
+}      */                       
+
+
+                                                    // Switch : Simple calculater.
+
+let a = 5,
+  b = 10;
+let operater = "-";
+switch (operater) {
+  case "+":
+    console.log(a + b);
+    break;
+
+  case "-":
+    console.log(a - b);
+    break;
+
+  case "*":
+    console.log(a * b);
+    break;
+
+  case "%":
+    console.log(a % b);
+    break;
+
+  default:
+    console.log("Invalid Operater");
+}
+
+
 
 // Reversion Pratice.
