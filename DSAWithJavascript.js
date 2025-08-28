@@ -262,7 +262,7 @@ else{
 
 
                                                     // Switch : Simple calculater.
-
+/*
 let a = 5,
   b = 10;
 let operater = "-";
@@ -285,8 +285,51 @@ switch (operater) {
 
   default:
     console.log("Invalid Operater");
+}  */
+
+
+
+                                             //Loops
+
+
+/* let ans = 55;
+for(let i = 1; i < ans; i++){
+  console.log(i);
+}                                             
+*/
+
+
+/*  let ans = 200;
+for(let i = 100; i <= 200; i++){
+
+  console.log(i);
+} */
+
+
+/* let cunt = 100;
+
+for(let i = 200; i >= 100; i--){
+  console.log(i);
 }
+*/  
+
+/*let cunt = 10;
+for(var i = 1; i <= cunt; i++){
+  console.log("hello");
+}
+console.log(i);
+*/
+
+/*let cunt = 10;
+for(let i = 1; i <= cunt; i++){               
+  console.log("hello");
+}
+console.log(i);
+
+note: Here scope is taking place.
+ */
 
 
+// Revision Practice.
 
-// Reversion Pratice.
+
