@@ -213,9 +213,7 @@ if (isNaN(unit) || unit < 0) {
   console.log("Total amount to Pay: " + amt);
 } */
 
-
-                                // INR Denomination
-
+// INR Denomination
 
 /*let amt = Number(prompt("enter the amount"));
 
@@ -258,10 +256,9 @@ else{
   if(amt === 1){
     console.log( " 1 coin :" + amt)
   }
-}      */                       
+}      */
 
-
-                                                    // Switch : Simple calculater.
+// Switch : Simple calculater.
 /*
 let a = 5,
   b = 10;
@@ -287,10 +284,7 @@ switch (operater) {
     console.log("Invalid Operater");
 }  */
 
-
-
-                                             //Loops
-
+//Loops
 
 /* let ans = 55;
 for(let i = 1; i < ans; i++){
@@ -298,20 +292,18 @@ for(let i = 1; i < ans; i++){
 }                                             
 */
 
-
 /*  let ans = 200;
 for(let i = 100; i <= 200; i++){
 
   console.log(i);
 } */
 
-
 /* let cunt = 100;
 
 for(let i = 200; i >= 100; i--){
   console.log(i);
 }
-*/  
+*/
 
 /*let cunt = 10;
 for(var i = 1; i <= cunt; i++){
@@ -330,6 +322,28 @@ note: Here scope is taking place.
  */
 
 
+
+       // sum of Natural number.
+
+
+let pr = prompt(" enter the no:");
+
+if (pr === null) {
+  console.log("canceled");
+} else {
+  let input = Number(pr);
+
+  if (isNaN(input)) {
+    console.log("you have  inter wrong input");
+  } else if (input > 0) {
+    let sum = 0;
+    for (let i = 1; i <= input; i++) {
+      sum = sum + i;
+    }
+    console.log(sum);
+  } else {
+    console.log("you have enter the negative no");
+  }
+}
+
 // Revision Practice.
-
-
