@@ -326,7 +326,7 @@ note: Here scope is taking place.
        // sum of Natural number.
 
 
-let pr = prompt(" enter the no:");
+/* let pr = prompt(" enter the no:");
 
 if (pr === null) {
   console.log("canceled");
@@ -344,6 +344,40 @@ if (pr === null) {
   } else {
     console.log("you have enter the negative no");
   }
+}   
+  */
+
+
+                          // Factors of number
+
+let pr = prompt("Enter number Here:");
+if(pr === null){
+  console.log("you have canceled");
+}else{
+
+let input = Number(pr);
+if(isNaN(input)){
+  console.log(" wrong input:");
+}else if(input > 0){
+
+  for(let i = 1; i <= Math.floor(input/2); i++){
+    if(input % i === 0){
+      console.log(i)
+      
+    }
+     
+  }
+  console.log(input)
+
+}else{
+  console.log("you input negative no:")
 }
+
+}
+
+
+
+
+
 
 // Revision Practice.
