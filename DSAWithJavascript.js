@@ -350,7 +350,7 @@ if (pr === null) {
 
                           // Factors of number
 
-let pr = prompt("Enter number Here:");
+/* let pr = prompt("Enter number Here:");
 if(pr === null){
   console.log("you have canceled");
 }else{
@@ -373,11 +373,49 @@ if(isNaN(input)){
   console.log("you input negative no:")
 }
 
-}
+} */
 
 
+
+                                            // find The prime number:
+
+ let pr = prompt("enter the Number:");
+
+if(pr === null){
+  console.log("canceled");
+}else{
+
+  let input = Number(pr);
+  if(isNaN(input)){
+    console.log("wrong input");
+  }else if (input > 0){
+
+    let primehai = true;
+    for(let i = 2; i <= Math.floor(input / 2); i++){
+      if(input % i === 0){
+        primehai = false;
+        break;
+      }
+    }
+    console.log(primehai)
+    
+  }else{
+    console.log("you have entered negative no:");
+  }
+} 
 
 
 
 
 // Revision Practice.
+
+// let n = 10;
+// let m = 11;
+
+// console.log(Math.floor(n / 2));
+// console.log(Math.floor(m / 2));
+
+
+
+
+
