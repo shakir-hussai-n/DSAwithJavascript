@@ -321,10 +321,7 @@ console.log(i);
 note: Here scope is taking place.
  */
 
-
-
-       // sum of Natural number.
-
+// sum of Natural number.
 
 /* let pr = prompt(" enter the no:");
 
@@ -347,8 +344,7 @@ if (pr === null) {
 }   
   */
 
-
-                          // Factors of number
+// Factors of number
 
 /* let pr = prompt("Enter number Here:");
 if(pr === null){
@@ -375,37 +371,33 @@ if(isNaN(input)){
 
 } */
 
+// find The prime number:
 
+let pr = prompt("enter the Number:");
 
-                                            // find The prime number:
-
- let pr = prompt("enter the Number:");
-
-if(pr === null){
+if (pr === null) {
   console.log("canceled");
-}else{
-
-  let input = Number(pr);
-  if(isNaN(input)){
+} else {
+  let n = Number(pr);
+  if (isNaN(n)) {
     console.log("wrong input");
-  }else if (input > 0){
-
-    let primehai = true;
-    for(let i = 2; i <= Math.floor(input / 2); i++){
-      if(input % i === 0){
-        primehai = false;
-        break;
-      }
-    }
-    console.log(primehai)
-    
-  }else{
+  } else if (n > 0) {
+    console.log(isPrimeNo(n));
+  } else {
     console.log("you have entered negative no:");
   }
-} 
+}
 
+function isPrimeNo(n) {
+  if (n <= 1) return false;
+  if (n === 2) return true;
+  if (n % 2 === 0) return false;
+  for (let i = 3; n <= Math.floor(Math.sqrt(n)); i += 2) {
+    if (n % i === 0) return false;
+  }
 
-
+  return true;
+}
 
 // Revision Practice.
 
@@ -414,8 +406,3 @@ if(pr === null){
 
 // console.log(Math.floor(n / 2));
 // console.log(Math.floor(m / 2));
-
-
-
-
-
