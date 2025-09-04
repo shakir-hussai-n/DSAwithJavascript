@@ -1,5 +1,6 @@
 // let age = prompt ("input any keywords: ")
-//     age = Number(age)
+//     age = number
+// (age)
 // console.log(typeof(age));
 
 // Swap variable by 3 method.
@@ -138,7 +139,8 @@ console.log(otp); */
 //circumference of circle
 
 /* let r = 12;
-let c = Number((2*Math.PI*r).toFixed(2))
+let c = number
+((2*Math.PI*r).toFixed(2))
 
 console.log(typeof(c)); */
 
@@ -155,7 +157,8 @@ console.log(typeof(c)); */
 
 // Q.8 Valid Voter  (Note : NaN === NaN : if false; isNaN(NaN): true; isNaN() is a function that helps to )
 
-/* let age = Number(prompt("What is you age?"));
+/* let age = number
+(prompt("What is you age?"));
 
 if (isNaN(age)){
   console.log("wrong input")
@@ -168,7 +171,8 @@ else if(age >= 18){
 
 // Q9. Shoping  discaunt calculater.
 
-/* let amt = Number(prompt("Enter the amount")); 
+/* let amt = number
+(prompt("Enter the amount")); 
 let dis = 0;
 if(isNaN(amt) || amt < 0){
  console.log("you have enter wrong input");
@@ -190,7 +194,8 @@ if(isNaN(amt) || amt < 0){
 
 // Q10. Electric bill calculater.
 
-/*let unit = Number(prompt("enter the Unit"));
+/*let unit = number
+(prompt("enter the Unit"));
 let amt = 0;
 if (isNaN(unit) || unit < 0) {
   console.log("You have entered wrong input:");
@@ -215,7 +220,8 @@ if (isNaN(unit) || unit < 0) {
 
 // INR Denomination
 
-/*let amt = Number(prompt("enter the amount"));
+/*let amt = number
+(prompt("enter the amount"));
 
 if(isNaN(amt) || amt < 0){
   console.log("You have enter");
@@ -321,14 +327,16 @@ console.log(i);
 note: Here scope is taking place.
  */
 
-// sum of Natural number.
+// sum of Natural number
+// .
 
 /* let pr = prompt(" enter the no:");
 
 if (pr === null) {
   console.log("canceled");
 } else {
-  let input = Number(pr);
+  let input = number
+(pr);
 
   if (isNaN(input)) {
     console.log("you have  inter wrong input");
@@ -346,12 +354,15 @@ if (pr === null) {
 
 // Factors of number
 
-/* let pr = prompt("Enter number Here:");
+
+/* let pr = prompt("Enter number
+ Here:");
 if(pr === null){
   console.log("you have canceled");
 }else{
 
-let input = Number(pr);
+let input = number
+(pr);
 if(isNaN(input)){
   console.log(" wrong input:");
 }else if(input > 0){
@@ -371,14 +382,17 @@ if(isNaN(input)){
 
 } */
 
-// find The prime number:
+// find The prime number
+// :
 
-let pr = prompt("enter the Number:");
+/* let pr = prompt("enter the number
+:");
 
 if (pr === null) {
   console.log("canceled");
 } else {
-  let n = Number(pr);
+  let n = number
+(pr);
   if (isNaN(n)) {
     console.log("wrong input");
   } else if (n > 0) {
@@ -397,12 +411,19 @@ function isPrimeNo(n) {
   }
 
   return true;
-}
+} */
+
+                                                   // Optimized and shorter program for sum of natural number; 
+      
+  let pr = prompt("input number:");
+  if(pr === null){
+    console.log("you have canceled:");
+  }else{
+     let n = Number(pr);
+     console.log(isNaN(pr)? "you have wrong input": (n > 0 ) ? (n * (n + 1)) / 2 : "you have input negative number:");
+
+  }
 
 // Revision Practice.
 
-// let n = 10;
-// let m = 11;
 
-// console.log(Math.floor(n / 2));
-// console.log(Math.floor(m / 2));
