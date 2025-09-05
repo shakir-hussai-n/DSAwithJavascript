@@ -415,7 +415,7 @@ function isPrimeNo(n) {
 
                                                    // Optimized and shorter program for sum of natural number; 
       
-  let pr = prompt("input number:");
+/*   let pr = prompt("input number:");
   if(pr === null){
     console.log("you have canceled:");
   }else{
@@ -423,6 +423,46 @@ function isPrimeNo(n) {
      console.log(isNaN(pr)? "you have wrong input": (n > 0 ) ? (n * (n + 1)) / 2 : "you have input negative number:");
 
   }
+   */
+
+
+                                                            //Optimized and shorter program for check prime number; 
+                                                            // Note:if a number can not be divide by 2 or its self square root then it forther can not be divide: 
+
+
+let pr = prompt("input number;");
+
+if(pr === null){
+  console.log("canceled");
+}else{
+let n = Number(pr);
+if(isNaN(n)){
+  console.log("wrong input");
+}else if(n > 0){
+  console.log(isPrime(n));
+  
+
+}
+else{
+  console.log("you have input wrong number:");
+}
+}
+
+function isPrime(n) {
+  if(n <= 1) return false;
+  if(n === 2) return true;
+  if(n % 2 === 0) return false;
+for(let i = 3; i <= Math.floor(Math.sqrt(n)); i+= 2){
+
+  if(n % 2 === 0) return false;
+
+}
+return true;
+  
+}
+
+ 
+
 
 // Revision Practice.
 
