@@ -426,11 +426,11 @@ function isPrimeNo(n) {
    */
 
 
-                                                            //Optimized and shorter program for check prime number; 
-                                                            // Note:if a number can not be divide by 2 or its self square root then it forther can not be divide: 
+                                                            // program for while loop; 
+                                                            
 
 
-let pr = prompt("input number;");
+ let pr = prompt("input number;");
 
 if(pr === null){
   console.log("canceled");
@@ -439,7 +439,7 @@ let n = Number(pr);
 if(isNaN(n)){
   console.log("wrong input");
 }else if(n > 0){
-  console.log(isPrime(n));
+  isPrime(n);
   
 
 }
@@ -449,15 +449,15 @@ else{
 }
 
 function isPrime(n) {
-  if(n <= 1) return false;
-  if(n === 2) return true;
-  if(n % 2 === 0) return false;
-for(let i = 3; i <= Math.floor(Math.sqrt(n)); i+= 2){
-
-  if(n % 2 === 0) return false;
-
-}
-return true;
+ 
+ let sum = 0;
+ while(n > 0){
+ let rem = n % 10;
+ sum = sum + rem ;
+ n = Math.floor(n / 10);
+ }
+ console.log(sum)
+ 
   
 }
 
