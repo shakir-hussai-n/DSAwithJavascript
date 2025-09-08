@@ -354,7 +354,6 @@ if (pr === null) {
 
 // Factors of number
 
-
 /* let pr = prompt("Enter number
  Here:");
 if(pr === null){
@@ -413,8 +412,8 @@ function isPrimeNo(n) {
   return true;
 } */
 
-                                                   // Optimized and shorter program for sum of natural number; 
-      
+// Optimized and shorter program for sum of natural number;
+
 /*   let pr = prompt("input number:");
   if(pr === null){
     console.log("you have canceled:");
@@ -425,12 +424,9 @@ function isPrimeNo(n) {
   }
    */
 
+// program for while loop;
 
-                                                            // program for while loop; 
-                                                            
-
-
- let pr = prompt("input number;");
+/* let pr = prompt("input number;");
 
 if(pr === null){
   console.log("canceled");
@@ -459,11 +455,33 @@ function isPrime(n) {
  console.log(sum)
  
   
-}
+} */
 
- 
+                                          //Program for  reverse Number:
+
+
+ let pr = prompt("Input number here:");
+if (pr === null) {
+  console.log("canceled");
+} else {
+  let n = Number(pr);
+  if (isNaN(n)) {
+    console.log("wrong input");
+  } else if (n > 0) {
+    let rev = 0;
+    while (n > 0) {
+      let rem = n % 10;
+      rev = rev * 10 + rem;
+      n = Math.floor(n / 10);
+    }
+    console.log(rev);
+  }else{
+    console.log("you have input negative number:")
+    }
+}
+    
+
+
 
 
 // Revision Practice.
-
-
