@@ -460,7 +460,7 @@ function isPrime(n) {
                                           //Program for  reverse Number:
 
 
- let pr = prompt("Input number here:");
+/* let pr = prompt("Input number here:");
 if (pr === null) {
   console.log("canceled");
 } else {
@@ -479,7 +479,34 @@ if (pr === null) {
     console.log("you have input negative number:")
     }
 }
-    
+    */
+
+/*
+let i = 1;
+do{
+  console.log("hello world");
+  i++;
+}while(i <= 10)  */
+
+
+
+                            // Square patter of star:
+
+
+
+let prompt = require('prompt-sync')();
+let n = Number(prompt("Enter number"))
+
+for(let i = 1; i <= n; i++){
+  console.log();
+  for(let i = 1; i<= n; i++){
+    process.stdout.write("*");
+  }
+}
+  
+
+
+
 
 
 
