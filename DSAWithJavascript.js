@@ -494,13 +494,27 @@ do{
 
 
 
-let prompt = require('prompt-sync')();
+/* let prompt = require('prompt-sync')();
 let n = Number(prompt("Enter number"))
 
 for(let i = 1; i <= n; i++){
   console.log();
   for(let i = 1; i<= n; i++){
     process.stdout.write("*");
+  }
+} */
+
+                                 // ABC pattern
+let c = 5;
+
+for(let i = 1; i <= c; i++){
+  console.log();
+    
+    let ascii = 65;
+  for(let r = 1; r <= i; r++){
+
+    process.stdout.write(String.fromCharCode(ascii) + "");
+    ascii++;
   }
 }
   
