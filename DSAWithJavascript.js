@@ -505,7 +505,7 @@ for(let i = 1; i <= n; i++){
 } */
 
                                  // ABC pattern
-let c = 5;
+/* let c = 5;
 
 for(let i = 1; i <= c; i++){
   console.log();
@@ -516,8 +516,62 @@ for(let i = 1; i <= c; i++){
     process.stdout.write(String.fromCharCode(ascii) + "");
     ascii++;
   }
-}
+}  */
+
   
+
+/* let c = 5;
+
+for(let i = 1; i <= c; i++){
+  console.log();
+    
+    let ascii = 65;
+  for(let r = 5; r <= c; r--){
+
+    process.stdout.write("*");
+    if (r === i) break
+  }
+} */
+
+/* let c = 5;
+for(let i = 1; i <= c ; i++){
+
+  console.log("");
+  
+  for(let j = 1; j <= c - i + 1; j++){
+
+    process.stdout.write("*")
+  }
+} */
+
+
+/* let c = 5;
+for(let i = 1; i <= c ; i++){
+
+  console.log("");
+
+  for(let j = n; j >= i; j-- ){
+    process.stdout.write("*");
+  }
+} */
+
+                                // Finding max in  array.
+
+ let arr = [10,300,20,400,2,3,4,6];
+
+ let max= arr[0];
+
+for(let i = 1; i <= arr.length; i++){
+
+  if(max < arr[i]){
+
+    max = arr[i]
+  }
+}
+console.log(max);
+ 
+
+
 
 
 
