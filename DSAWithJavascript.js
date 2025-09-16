@@ -557,7 +557,7 @@ for(let i = 1; i <= c ; i++){
 
                                 // Finding max in  array.
 
- let arr = [10,300,20,400,2,3,4,6];
+/* let arr = [10,300,20,400,2,3,4,6,1,0];
 
  let max= arr[0];
 
@@ -568,7 +568,25 @@ for(let i = 1; i <= arr.length; i++){
     max = arr[i]
   }
 }
-console.log(max);
+console.log(max);  */
+
+
+
+                                  //Find  Min in array.
+
+                                
+ let arr = [10,300,20,400,2,3,4,6,1,0];
+
+ let max= arr[0];
+
+for(let i = 1; i <= arr.length; i++){
+
+  if(max < arr[i]){
+
+    max = arr[i]
+  }
+}
+console.log(max);                                  
  
 
 
