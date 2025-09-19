@@ -457,8 +457,7 @@ function isPrime(n) {
   
 } */
 
-                                          //Program for  reverse Number:
-
+//Program for  reverse Number:
 
 /* let pr = prompt("Input number here:");
 if (pr === null) {
@@ -488,11 +487,7 @@ do{
   i++;
 }while(i <= 10)  */
 
-
-
-                            // Square patter of star:
-
-
+// Square patter of star:
 
 /* let prompt = require('prompt-sync')();
 let n = Number(prompt("Enter number"))
@@ -504,7 +499,7 @@ for(let i = 1; i <= n; i++){
   }
 } */
 
-                                 // ABC pattern
+// ABC pattern
 /* let c = 5;
 
 for(let i = 1; i <= c; i++){
@@ -517,8 +512,6 @@ for(let i = 1; i <= c; i++){
     ascii++;
   }
 }  */
-
-  
 
 /* let c = 5;
 
@@ -544,7 +537,6 @@ for(let i = 1; i <= c ; i++){
   }
 } */
 
-
 /* let c = 5;
 for(let i = 1; i <= c ; i++){
 
@@ -555,7 +547,7 @@ for(let i = 1; i <= c ; i++){
   }
 } */
 
-                                // Finding max in  array.
+// Finding max in  array.
 
 /* let arr = [10,300,20,400,2,3,4,6,1,0];
 
@@ -570,12 +562,9 @@ for(let i = 1; i <= arr.length; i++){
 }
 console.log(max);  */
 
+//Find  Min in array.
 
-
-                                  //Find  Min in array.
-
-                                
- let arr = [10,300,20,400,2,3,4,6,1,0];
+/* let arr = [10,300,20,400,2,3,4,6,1,0];
 
  let max= arr[0];
 
@@ -586,15 +575,23 @@ for(let i = 1; i <= arr.length; i++){
     max = arr[i]
   }
 }
-console.log(max);                                  
- 
+console.log(max);   */
 
+// find second Max in array.
 
+let arr = [23, 33, 22, 11, 38, 44, 55, 66, 7, 64, 54, 68, 99];
 
+let max = Math.max(arr[0], arr[1]);
+let sMax = Math.min(arr[0], arr[1]);
 
-
-
-
-
+for (let i = 2; i < arr.length; i++) {
+  if (arr[i] > max) {
+    sMax = max;
+    max = arr[i];
+  } else if (arr[i] > sMax) {
+    sMax = arr[i];
+  }
+}
+console.log(sMax);
 
 // Revision Practice.
