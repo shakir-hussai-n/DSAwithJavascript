@@ -579,7 +579,7 @@ console.log(max);   */
 
 // find second Max in array.
 
-let arr = [23, 33, 22, 11, 38, 44, 55, 66, 7, 64, 54, 68, 99];
+/* let arr = [23, 33, 22, 11, 38, 44, 55, 66, 7, 64, 54, 68, 99];
 
 let max = Math.max(arr[0], arr[1]);
 let sMax = Math.min(arr[0], arr[1]);
@@ -592,6 +592,26 @@ for (let i = 2; i < arr.length; i++) {
     sMax = arr[i];
   }
 }
-console.log(sMax);
+console.log(sMax);  */
+
+// Find second min in array:
+
+let arr = [12, 23, 32, 33, 20, 53, 21, 45, 65, 65, 34, 90, 80];
+let sMin = Math.max(arr[0], arr[1]);
+let fMin = Math.min(arr[0], arr[1]);
+
+for (let i = 2; i < arr.length; i++) {
+  if (arr[i] < fMin) {
+    sMin = fMin;
+    fMin = arr[i];
+  } else if (arr[i] < sMin) {
+    sMin = arr[i];
+  }
+}
+console.log(sMin);
 
 // Revision Practice.
+
+
+
+
