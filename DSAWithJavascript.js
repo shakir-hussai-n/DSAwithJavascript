@@ -596,7 +596,7 @@ console.log(sMax);  */
 
 // Find second min in array:
 
-let arr = [12, 23, 32, 33, 20, 53, 21, 45, 65, 65, 34, 90, 80];
+/* let arr = [12, 23, 32, 33, 20, 53, 21, 45, 65, 65, 34, 90, 80];
 let sMin = Math.max(arr[0], arr[1]);
 let fMin = Math.min(arr[0], arr[1]);
 
@@ -608,8 +608,29 @@ for (let i = 2; i < arr.length; i++) {
     sMin = arr[i];
   }
 }
-console.log(sMin);
+console.log(sMin);  */
 
+
+                                 // Programs for reverse array.
+
+                                 
+
+let arr = [10,20,30,40,50,60,70,80];
+let i = 0;
+let j = arr.length - 1;
+
+
+while(i < j){
+let temp = arr[i];
+
+arr[i] = arr[j];
+arr[j] = temp
+
+i++
+j--
+
+}
+console.log(arr)
 // Revision Practice.
 
 
