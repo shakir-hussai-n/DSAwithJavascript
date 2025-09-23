@@ -610,14 +610,11 @@ for (let i = 2; i < arr.length; i++) {
 }
 console.log(sMin);  */
 
+// Programs for reverse array.
 
-                                 // Programs for reverse array.
-
-                                 
-
-let arr = [10,20,30,40,50,60,70,80];
+/* let arr = [10,20,30,40,50,60,70,80,11];
 let i = 0;
-let j = arr.length - 1;
+let j = arr.length -1;
 
 
 while(i < j){
@@ -630,9 +627,27 @@ i++
 j--
 
 }
-console.log(arr)
+console.log(arr)  */
+
+
+
+                              // programs to arrange 0 and 1 in sequence;
+
+let arr = [0, 1, 1, 0, 0, 1, 0, 1, 1];
+let i = 0;
+let j = 0;
+
+while (i < arr.length) {
+  if (arr[i] === 0) {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    j++;
+  }
+  i++;
+  
+}
+console.log(arr);
+
 // Revision Practice.
-
-
-
 
