@@ -594,7 +594,9 @@ for (let i = 2; i < arr.length; i++) {
 }
 console.log(sMax);  */
 
-// Find second min in array:
+                                             // Find second min in array:
+
+
 
 /* let arr = [12, 23, 32, 33, 20, 53, 21, 45, 65, 65, 34, 90, 80];
 let sMin = Math.max(arr[0], arr[1]);
@@ -610,7 +612,7 @@ for (let i = 2; i < arr.length; i++) {
 }
 console.log(sMin);  */
 
-// Programs for reverse array.
+                         // Programs for reverse array.
 
 /* let arr = [10,20,30,40,50,60,70,80,11];
 let i = 0;
@@ -633,7 +635,7 @@ console.log(arr)  */
 
                               // programs to arrange 0 and 1 in sequence;
 
-let arr = [0, 1, 1, 0, 0, 1, 0, 1, 1];
+/* let arr = [0, 1, 1, 0, 0, 1, 0, 1, 1];
 let i = 0;
 let j = 0;
 
@@ -647,7 +649,33 @@ while (i < arr.length) {
   i++;
   
 }
+console.log(arr); */
+          
+
+
+
+                                                   // left rotation by 1 element.
+
+let arr = [2,3,4,5,6,7,8,9];
+
+let i = 1 ;
+let j = 0;
+temp = arr[0];
+
+while(i < arr.length ) {
+
+arr[j] = arr[i]
+if(i === 7){
+arr[i] =temp
+
+}
+i++;
+j++;
+
+}
 console.log(arr);
+
+
 
 // Revision Practice.
 
