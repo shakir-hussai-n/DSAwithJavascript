@@ -656,7 +656,7 @@ console.log(arr); */
 
                                                    // left rotation by 1 element.
 
-let arr = [2,3,4,5,6,7,8,9];
+/*let arr = [2,3,4,5,6,7,8,9];
 
 let i = 1 ;
 let j = 0;
@@ -673,6 +673,21 @@ i++;
 j++;
 
 }
+console.log(arr);  */
+
+
+
+                                             //// left rotation by 1 element.
+                                             
+let arr = [1,2,4,5,6,75,6,33,45,6,7,8];
+let cop = arr[0];
+
+for(let i = 0; i < arr.length - 1; i++){
+  arr[i] = arr[i+1];
+
+
+}
+arr[arr.length-1] = cop;
 console.log(arr);
 
 
