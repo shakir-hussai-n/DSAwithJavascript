@@ -678,8 +678,8 @@ console.log(arr);  */
 
 
                                              //// left rotation by 1 element.
-                                             
-let arr = [1,2,4,5,6,75,6,33,45,6,7,8];
+
+/* let arr = [1,2,4,5,6,75,6,33,45,6,7,8];
 let cop = arr[0];
 
 for(let i = 0; i < arr.length - 1; i++){
@@ -688,9 +688,33 @@ for(let i = 0; i < arr.length - 1; i++){
 
 }
 arr[arr.length-1] = cop;
-console.log(arr);
+console.log(arr);  */
 
 
 
+
+                                          //// right rotation by 1 element.
+
+let arr = [1, 2, 4, 5, 6, 75, 6, 33, 45, 6, 7, 8];
+let cop = arr[arr.length -1];
+
+for(let  i = arr.length -1 ; i > 0; i--){
+ arr[i] = arr[i-1]
+ 
+ 
+
+}
+arr[0] = cop;
+
+console.log(arr)  
+
+
+                          // short ways to do
+
+let arr1 = [1, 2, 4, 5, 6, 75, 6, 33, 45, 6, 7, 8];
+
+arr1.unshift(arr1.pop())
+
+console.log(arr1)
 // Revision Practice.
 
