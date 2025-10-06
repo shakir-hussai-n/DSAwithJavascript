@@ -695,7 +695,9 @@ console.log(arr);  */
 
                                           //// right rotation by 1 element.
 
-let arr = [1, 2, 4, 5, 6, 75, 6, 33, 45, 6, 7, 8];
+                                          
+
+/* let arr = [1, 2, 4, 5, 6, 75, 6, 33, 45, 6, 7, 8];
 let cop = arr[arr.length -1];
 
 for(let  i = arr.length -1 ; i > 0; i--){
@@ -715,6 +717,21 @@ let arr1 = [1, 2, 4, 5, 6, 75, 6, 33, 45, 6, 7, 8];
 
 arr1.unshift(arr1.pop())
 
-console.log(arr1)
+console.log(arr1) */ 
+
+
+                                        //left rotation by k element
+
+let arr = [1, 2, 4, 5, 6, 75, 6, 33, 45, 6, 7, 8];
+let k = Number(prompt("enter number:"))
+let cop = arr[0];
+
+for(let i = 1 ; i <= k; i++){for(let i = 0 ; i < arr.length - 1; i++){
+
+  arr[i] = arr[i+1]
+}}
+arr[arr.length] = cop
+console.log(arr);
+
 // Revision Practice.
 
